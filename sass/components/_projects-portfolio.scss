@@ -1,0 +1,145 @@
+.buttons {
+  .list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  &__list {
+    margin-bottom: 34px;
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__btn {
+    border-radius: 4px;
+    height: 38px;
+    min-width: 73px;
+    border-radius: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-title-color);
+    cursor: pointer;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: transparent;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+  }
+
+  &__list &__item + &__item {
+    margin-left: 8px;
+  }
+}
+
+.projects {
+  &__elements {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link:hover .overlay__block,
+  &__link:focus .overlay__block {
+    transform: translateY(0);
+  }
+
+  &__elements:hover,
+  &__elements:focus {
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.overlay {
+  position: relative;
+
+  overflow: hidden;
+
+  &__block {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+
+    background-color: var(--accent-color);
+
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-background-color);
+  }
+}
+
+.overlay__cards {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
+
+  .overlay__title {
+    color: var(--primary-title-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  .overlay__about {
+    color: var(--primary-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
+}

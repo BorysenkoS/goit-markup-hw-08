@@ -1,0 +1,22 @@
+// Base
+@import "./base/variables";
+@import "./base/common";
+@import "./base/utils";
+
+// Layouts:
+@import "./layouts/header";
+@import "./layouts/hero";
+
+@import "./layouts/skills";
+@import "./layouts/works";
+@import "./layouts/team";
+@import "./layouts/customers";
+@import "./layouts/contacts";
+@import "./layouts/join-up";
+@import "./layouts/footer-from";
+@import "./layouts/header-portfolio";
+@import "./layouts/projects-portfolio";
+
+// Components
+@import "./components/modal";
+@import "./components/modals-form";

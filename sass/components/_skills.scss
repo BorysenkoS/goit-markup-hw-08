@@ -6,13 +6,14 @@
   letter-spacing: 0.03em;
 
   &__list {
-    display: flex;
+    // display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
   }
   &__item {
-    width: 270px;
+    padding-top: 0;
+    width: 450px;
   }
 
   &__icon {
@@ -37,11 +38,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 }
 
-.skills__list .skills__item + .skills__item {
-  margin-left: 30px;
+.skills__item:not(:last-child) {
+  margin-bottom: 30px;
 }
+
+// .skills__list .skills__item + .skills__item {
+//   margin-left: 30px;
+// }

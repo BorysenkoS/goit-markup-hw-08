@@ -1,21 +1,23 @@
-// Base
-@import "./base/variables";
-@import "./base/common";
-@import "./base/utils";
+// utils
+@import "../sass/utils/variables";
+@import "../sass/utils/common";
+@import "../sass/utils/utils";
+@import "../sass/utils/mixins";
 
-// Layouts:
-@import "./layouts/header";
-@import "./layouts/hero";
+// components
+@import "./components/mobile-menu";
+@import "./components/header";
+@import "./components/hero";
 
-@import "./layouts/skills";
-@import "./layouts/works";
-@import "./layouts/team";
-@import "./layouts/customers";
-@import "./layouts/contacts";
-@import "./layouts/join-up";
-@import "./layouts/footer-from";
-@import "./layouts/header-portfolio";
-@import "./layouts/projects-portfolio";
+@import "./components/skills";
+@import "./components/works";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/contacts";
+@import "./components/join-up";
+@import "./components/footer-from";
+@import "./components/header-portfolio";
+@import "./components/projects-portfolio";
 
 // Components
 @import "./components/modal";

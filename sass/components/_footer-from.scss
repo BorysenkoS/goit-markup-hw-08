@@ -1,6 +1,6 @@
 .footer {
   &__email {
-    margin-left: 93px;
+    // margin-left: 93px;
     margin-bottom: 20px;
 
     font-family: "Roboto";
@@ -8,6 +8,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -15,9 +16,9 @@
   }
 
   &__form {
-    display: flex;
-
-    margin-left: 93px;
+    align-items: center;
+    // display: flex;
+    // margin-left: 93px;
   }
 
   &__::placeholder {
@@ -33,7 +34,8 @@
 
   &__input {
     padding-left: 16px;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 450px;
     height: 50px;
 
     background: #2f303a;
@@ -54,7 +56,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
+    margin: auto;
+
+    // margin-left: 12px;
 
     width: 200px;
     height: 50px;

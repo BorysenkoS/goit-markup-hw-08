@@ -1,12 +1,15 @@
-.contacts .container {
-  align-items: baseline;
-  display: flex;
-}
+// .contacts .container {
+//   align-items: baseline;
+//   display: flex;
+// }
 
 .join {
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
+  display: block;
+  text-align: center;
+
+  //   margin-left: 70px;
+  //     width: 206px;
+  //     height: 80px;
 
   &__title {
     margin-bottom: 20px;
@@ -17,15 +20,19 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
+
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
   &__list {
+    display: flex;
+    justify-content: center;
+
     gap: 10px;
     margin: 0;
     padding: 0;
-    display: flex;
+    margin-bottom: 60px;
   }
 
   &__links {

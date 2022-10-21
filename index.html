@@ -24,7 +24,7 @@
         <a lang="en" href="./index.html" class="navigation__logo">
           <span class="navigation__span">Web</span>Studio</a
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="navigation__site list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link current">Студія</a>
@@ -38,7 +38,7 @@
           </ul>
 
           <ul class="navigation__auth list">
-            <li class="navigation__item">
+            <li class="navigation__auth--item">
               <a
                 href="mailto:info@devstudio.com"
                 class="navigation__auth--link"
@@ -49,7 +49,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="navigation__item">
+            <li class="navigation__auth--item">
               <a href="tel:+380961111111" class="navigation__auth--link">
                 <svg class="navigation__icon--smartphone">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -58,17 +58,17 @@
               >
             </li>
           </ul>
-          <button
-            type="button"
-            class="js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="24px" height="16px">
-              <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
-            </svg>
-          </button>
         </nav>
+        <button
+          type="button"
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24px" height="16px">
+            <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button type="button" class="menu-button js-close-menu">
             <svg width="18px" height="18px">
@@ -233,7 +233,7 @@
                 class="team__images"
                 src="./images/for-mobile/igor.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
+                width="450"
               />
               <div>
                 <h3 class="team__names">Ігор Дем'яненко</h3>
@@ -282,7 +282,7 @@
                 class="team__images"
                 src="./images/for-mobile/olga.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                width="450"
               />
               <div>
                 <h3 class="team__names">Ольга Рєпіна</h3>
@@ -331,7 +331,7 @@
                 class="team__images"
                 src="./images/for-mobile/mykola.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                width="450"
               />
               <div>
                 <h3 class="team__names">Микола Тарасов</h3>
@@ -380,7 +380,7 @@
                 class="team__images"
                 src="./images/for-mobile/myhaylo.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                width="450"
               />
               <div>
                 <h3 class="team__names">Михайло Єрмаков</h3>
@@ -573,7 +573,7 @@
     <!-- Footer -->
     <footer class="contacts section">
       <div class="container">
-        <div>
+        <div class="container__tab">
           <address class="cotacts__address">
             <a lang="en" href="./index.html" class="contacts__logo"
               ><span class="contacts__span">Web</span>Studio</a
@@ -600,40 +600,41 @@
               </li>
             </ul>
           </address>
-        </div>
-        <!-- join up -->
-        <div class="join">
-          <p class="join__title">приєднуйтесь</p>
-          <ul class="join__list list">
-            <li>
-              <a href="" class="join__links"
-                ><svg width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="join__links"
-                ><svg width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="join__links"
-                ><svg width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="join__links"
-                ><svg width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+
+          <!-- join up -->
+          <div class="join">
+            <p class="join__title">приєднуйтесь</p>
+            <ul class="join__list list">
+              <li>
+                <a href="" class="join__links"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="join__links"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="join__links"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="join__links"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Footer-Form -->
         <form class="footer">

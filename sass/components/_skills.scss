@@ -11,10 +11,6 @@
     margin-bottom: 0px;
     padding-left: 0px;
   }
-  &__item {
-    padding-top: 0;
-    width: 450px;
-  }
 
   &__icon {
     margin-top: 25px;
@@ -41,6 +37,21 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.skills__item {
+  width: 450px;
+
+  @media screen and(min-width:768px) {
+    width: 354px;
   }
 }
 

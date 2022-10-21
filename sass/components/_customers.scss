@@ -12,6 +12,10 @@
     letter-spacing: 0.03em;
 
     color: var(--primary-title-color);
+
+    @media screen and(min-width:768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -39,6 +43,11 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:768px) {
+      width: 226px;
+      margin: 0;
+    }
   }
 
   &__link:hover,
@@ -58,4 +67,8 @@
 
 .customers__item {
   flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 30px) / 4);
+  }
 }

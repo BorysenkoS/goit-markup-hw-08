@@ -1,3 +1,11 @@
+@media screen and(min-width:768px) {
+  .container__tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 .contacts {
   min-width: 480px;
   background-color: #2f303a;

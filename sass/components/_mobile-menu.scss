@@ -1,56 +1,123 @@
-.js-close-menu {
-  position: absolute;
-  top: 10px;
-
-  width: 40px;
-  height: 40px;
-  border: none;
-  background: none;
-
-  &:hover {
-    fill: #2196f3;
-  }
-}
-
 .menu-container {
   position: fixed;
+
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vh;
-
-  background-color: #ffffff;
-
-  z-index: 999;
+  padding: 0 48px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  z-index: 99;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
+  display: block;
   transform: translateX(0);
 }
 
+.menu-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
+}
+
 .mobile-list {
-  padding-left: 40px;
+  margin: 0;
   padding-top: 48px;
-  margin-bottom: 306px;
+  padding-left: 0;
+  margin-bottom: 302px;
 }
 
 .mobile-link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
 
   color: #212121;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #2196f3;
   }
 }
 
 .mobile-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-contacts {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  text-decoration: none;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobile-contacts__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #757575;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.mobile-flex {
+  display: flex;
+
+  padding-left: 0;
+}
+
+.mobile-flex__link {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobile-flex__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mobile-flex__item:not(:last-child):not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }

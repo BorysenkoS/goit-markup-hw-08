@@ -16,8 +16,16 @@
     background-image: url(/images/for-tablet/overlay-tab.png),
       url(/images/for-tablet/background-tab.jpg);
   }
+
+  @media screen and(min-width:1200px) {
+    background-image: url(/images/imgoverlay.png), url(/images/background.jpg);
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -28,6 +36,12 @@
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and(min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .btn {

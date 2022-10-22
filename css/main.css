@@ -58,6 +58,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 h1,
 h2,
@@ -219,6 +225,12 @@ p {
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .navigation__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .navigation__span {
   color: var(--accent-color);
@@ -247,9 +259,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
   margin: 0;
   margin-right: 96px;
-  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__site {
+    margin-right: 315px;
+  }
 }
 
 .navigation__site .navigation__item:not(:last-child) {
@@ -292,12 +309,29 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .navigation__auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__auth :not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .navigation__icon--envelope {
   margin-right: 8px;
   fill: currentColor;
   width: 14px;
   height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__icon--envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .navigation__icon--smartphone {
@@ -306,11 +340,20 @@ p {
   width: 10px;
   height: 14px;
 }
+@media screen and (min-width: 1200px) {
+  .navigation__icon--smartphone {
+    margin-right: 10px;
+    height: 16px;
+  }
+}
 
 .navigation__auth--link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -319,6 +362,12 @@ p {
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .navigation__auth--link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .navigation__auth--item {
@@ -332,6 +381,11 @@ p {
 
 .navigation__auth--item:not(:last-child) {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__auth--item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .js-open-menu {
@@ -370,8 +424,17 @@ p {
     background-image: url(/images/for-tablet/overlay-tab.png), url(/images/for-tablet/background-tab.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(/images/imgoverlay.png), url(/images/background.jpg);
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -381,6 +444,13 @@ p {
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .btn {
@@ -463,15 +533,32 @@ p {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    width: 270px;
+  }
+}
 
 .skills__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .skills__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .works {
   display: none;
   padding-top: 0;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .works__title {
   color: var(--primary-title-color);
@@ -539,6 +626,12 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 .team__images {
   width: 100%;
   margin-bottom: 30px;
@@ -579,6 +672,11 @@ p {
 @media screen and (min-width: 768px) {
   .team__item {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
   }
 }
 
@@ -656,6 +754,13 @@ p {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
 .customers__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,6 +800,11 @@ p {
     margin: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
+}
 .customers__link:hover, .customers__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
@@ -714,6 +824,12 @@ p {
         flex-basis: calc((100% - 30px) / 4);
   }
 }
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 7);
+        flex-basis: calc((100% - 30px) / 7);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container__tab {
@@ -722,6 +838,16 @@ p {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -745,6 +871,13 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__logo {
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+  }
+}
 
 .contacts__span {
   color: var(--accent-color);
@@ -758,9 +891,19 @@ p {
   padding-left: 0px;
   list-style: none;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    text-align: left;
+  }
+}
 
 .contacts__list .contacts__item + .contacts__item {
   margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list .contacts__item + .contacts__item {
+    margin-top: 9px;
+  }
 }
 
 .contacts__addres {
@@ -775,6 +918,11 @@ p {
   letter-spacing: 0.03em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__addres {
+    margin-right: 70px;
+  }
 }
 
 .contacts__mail,
@@ -804,6 +952,11 @@ p {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-right: 93px;
+  }
+}
 .join__title {
   margin-bottom: 20px;
   color: var(--primary-background-color);
@@ -814,6 +967,11 @@ p {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
 }
 .join__list {
   display: -webkit-box;
@@ -862,6 +1020,11 @@ p {
   text-transform: uppercase;
   color: var(--primary-background-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer__email {
+    text-align: left;
+  }
+}
 .footer__form {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -876,6 +1039,17 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer__form {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .footer__::-webkit-input-placeholder {
@@ -938,6 +1112,11 @@ p {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
+}
 .footer__input:focus {
   border-color: var(--accent-color);
 }
@@ -966,6 +1145,12 @@ p {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 .footer__icon {
   margin-left: 10px;

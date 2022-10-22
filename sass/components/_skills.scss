@@ -53,10 +53,18 @@
   @media screen and(min-width:768px) {
     width: 354px;
   }
+
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
 }
 
 .skills__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
 
 // .skills__list .skills__item + .skills__item {

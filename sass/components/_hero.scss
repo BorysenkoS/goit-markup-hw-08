@@ -1,6 +1,6 @@
 .hero {
-  background-image: url(../../images/for-mobile/overlay-mob.png),
-    url(../../images/for-mobile/background-mob.jpg);
+  background-image: url(..//../images/for-mobile/overlay-mob.png),
+    url(..//../images/for-mobile/background-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -13,13 +13,13 @@
   text-align: center;
 
   @media screen and(min-width:768px) {
-    background-image: url(../../images/for-tablet/overlay-tab.png),
-      url(../../images/for-tablet/background-tab.jpg);
+    background-image: url(..//../images/for-tablet/overlay-tab.png),
+      url(..//../images/for-tablet/background-tab.jpg);
   }
 
   @media screen and(min-width:1200px) {
-    background-image: url(../../images/imgoverlay.png),
-      url(../../images/background.jpg);
+    background-image: url(..//../images/imgoverlay.png),
+      url(..//../images/background.jpg);
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
